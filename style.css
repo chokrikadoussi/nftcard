@@ -1,0 +1,13 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Dark-blue-main: hsl(217, 54%, 11%);
+  --Dark-blue-card: hsl(216, 50%, 16%);
+  --Dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
