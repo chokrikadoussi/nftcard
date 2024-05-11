@@ -7,7 +7,38 @@
   --White: hsl(0, 0%, 100%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html {
   font-size: 18px;
   font-family: "Outfit", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-blue-main);
+}
+
+.card {
+  background-color: var(--Dark-blue-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: calc(15vw + 3rem);
+}
+
+.eql-img {
+  width: 15vw;
+  border-radius: 6px;
+}
+
+.container-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
