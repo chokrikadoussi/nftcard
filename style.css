@@ -37,8 +37,33 @@ body {
   border-radius: 6px;
 }
 
+.title {
+  color: var(--White);
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 2vh 0;
+}
+
+.card > p {
+  color: var(--Soft-blue);
+  font-weight: 200;
+  padding-bottom: 2vh;
+}
+
 .container-sub {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price > p {
+  color: var(--Cyan);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
 }
