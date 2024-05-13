@@ -37,11 +37,22 @@ body {
   border-radius: 6px;
 }
 
+/* Ajouter couleur lors du survol de l'image + icon */
+
+.eql-img:hover {
+  cursor: pointer;
+}
+
 .title {
   color: var(--White);
   font-weight: 500;
   font-size: 1.25rem;
   padding: 2vh 0;
+}
+
+.title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
 }
 
 .card > p {
@@ -50,15 +61,16 @@ body {
   padding-bottom: 2vh;
 }
 
-.container-sub {
+.container-sub,
+.align {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.price {
-  display: flex;
-  align-items: center;
+.container-sub {
+  justify-content: space-between;
+  padding-bottom: 2vh;
+  border-bottom: solid 0.5px var(--Dark-blue-line);
 }
 
 .price > p {
@@ -66,4 +78,37 @@ body {
   font-weight: 600;
   font-size: 0.9rem;
   margin-left: 0.5rem;
+}
+
+.time > p {
+  color: var(--Soft-blue);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-left: 0.25rem;
+}
+
+.creator {
+  padding-top: 2vh;
+}
+
+.creator > img {
+  height: 2rem;
+  border: var(--White) 1px solid;
+  border-radius: 50%;
+}
+
+.creator > p {
+  font-size: 0.9rem;
+  color: var(--Soft-blue);
+  font-weight: 300;
+  padding-left: 0.75rem;
+}
+
+.user-link {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.user-link:hover {
+  color: var(--Cyan);
 }
