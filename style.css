@@ -32,15 +32,38 @@ body {
   width: calc(15vw + 3rem);
 }
 
-.eql-img {
+.image {
+  position: relative;
   width: 15vw;
+  height: 15vw;
+  background-color: var(--Cyan);
+  border-radius: 8px;
+}
+
+.eql-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   border-radius: 6px;
 }
 
-/* Ajouter couleur lors du survol de l'image + icon */
+.icon {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  opacity: 0;
+}
 
-.eql-img:hover {
+.image:hover .eql-img {
   cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.image:hover .icon {
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
 .title {
